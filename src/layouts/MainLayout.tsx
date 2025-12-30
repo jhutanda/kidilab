@@ -1,7 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Mic, Volume2, Home, Star } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
 
 
 import { Navbar } from '@/components/Navbar';

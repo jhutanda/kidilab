@@ -1,7 +1,5 @@
-import React from 'react';
 import { Heart, Facebook, Twitter, Instagram, Youtube, Mail, Shield, Info } from 'lucide-react';
 import { useAppStore } from '@/store/useAppStore';
-import { Button } from '@/components/ui/Button';
 
 export function Footer() {
     const { setView } = useAppStore();

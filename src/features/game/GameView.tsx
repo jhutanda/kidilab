@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { DndContext, useDraggable, useDroppable, DragEndEvent } from '@dnd-kit/core';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Star, RotateCcw, PartyPopper } from 'lucide-react';
+import { RotateCcw, PartyPopper } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { elevenLabsService } from '@/lib/elevenlabs';
 import { useAppStore } from '@/store/useAppStore';
@@ -90,7 +90,7 @@ const generateLevel = () => {
 // --- Main Game Component ---
 export function GameView() {
     const { addStars } = useAppStore();
-    const [score, setScore] = useState(0);
+    const [, setScore] = useState(0);
     const [levelData, setLevelData] = useState(generateLevel());
     const [isRegenerating, setIsRegenerating] = useState(false);
     const [caseMode, setCaseMode] = useState<'uppercase' | 'lowercase'>('uppercase');

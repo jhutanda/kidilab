@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Card } from '@/components/ui/Card';
 import { elevenLabsService } from '@/lib/elevenlabs';
 import { cn } from '@/lib/utils';
 import { Volume2 } from 'lucide-react';
@@ -37,7 +36,7 @@ export function NumbersGrid() {
                     return (
                         <Button
                             key={range.label}
-                            variant="ghost"
+                            variant="outline"
                             onClick={() => setActiveRange(range)}
                             className={cn(
                                 "rounded-full px-4 py-2 font-bold transition-all",
